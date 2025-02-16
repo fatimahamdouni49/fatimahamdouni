@@ -1,0 +1,142 @@
+/* Estilos base */
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: 'Gochi Hand', cursive;
+  text-align: center;
+}
+
+/* Fondo general */
+body {
+  background: linear-gradient(to bottom, #1296ae, #ebf4f6);
+  color: black;
+}
+
+/* Modo oscuro */
+.dark-mode {
+  background: linear-gradient(to bottom, #1e1e1e, #444444);
+  color: white;
+}
+
+.dark-mode a {
+  color: white;
+}
+
+.dark-mode header h1,
+.dark-mode header h3 {
+  color: white;
+}
+
+.dark-mode .navbar {
+  background-color: #333333;
+  color: white;
+}
+
+.dark-mode .navbar-links a {
+  color: white;
+}
+
+.dark-mode button {
+  background-color: #555;
+  color: white;
+}
+
+.dark-mode button:hover {
+  background-color: #777;
+}
+
+/* Estilos de encabezado */
+header h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+header h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Estilo del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c336b;
+  padding: 10px 20px;
+  color: goldenrod;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  color: goldenrod;
+  text-decoration: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Contenedor principal */
+.container {
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.col-sm-12 {
+  padding: 10px;
+}
+
+/* Barra de búsqueda */
+.search-bar {
+  width: 80%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #1296ae;
+}
+
+/* Botones */
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1c336b;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1296ae;
+}
+/* Estilo para el Chatbox fijo en la esquina inferior derecha */
+.chatbox-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 300px;
+  z-index: 1000;
+}
